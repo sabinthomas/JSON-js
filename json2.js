@@ -390,7 +390,7 @@ if (!JSON) {
             if (replacer && typeof replacer !== 'function' &&
                     (typeof replacer !== 'object' ||
                     typeof replacer.length !== 'number')) {
-                throw new Error('JSON.stringify');
+                throw new Error('JSON.stringify 2');
             }
 
 // Make a fake root object containing our value under the key of ''.
@@ -481,7 +481,7 @@ if (!JSON) {
 
 // If the text is not JSON parseable, then a SyntaxError is thrown.
 
-            throw new SyntaxError('JSON.parse');
+            throw new SyntaxError('JSON.parse 2');
         };
     }
 }());
